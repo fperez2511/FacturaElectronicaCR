@@ -23,7 +23,7 @@ namespace FacturaElectronicaCR_CS.ClasesDatos
 
     public class FacturaElectronicaCR
     {
-        private XmlDocument _xml_factura;
+        //private XmlDocument _xml_factura;
         private System.IO.MemoryStream mXML;
 
         private string _numeroConsecutivo = "";
