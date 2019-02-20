@@ -240,27 +240,27 @@ public enum TiqueteElectronicoMedioPago {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    Efectivo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    Tarjeta,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    Cheque,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    TransferenciaDepositoBancario,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    RecaudadoPorTerceros,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
@@ -1357,39 +1357,39 @@ public enum TiqueteElectronicoInformacionReferenciaTipoDoc {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    FacturaElectronica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    NotaDebitoElectronica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    NotaCreditoElectronica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    TiqueteElectronico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    NotaDespacho,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("06")]
-    Item06,
+    Contrato,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("07")]
-    Item07,
+    Procedimiento,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("08")]
-    Item08,
+    ComprobanteEmitidoContigencia,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
