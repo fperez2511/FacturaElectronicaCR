@@ -107,6 +107,7 @@ namespace FacturaElectronicaCR_CS
                 if ((cert == null))
                 {
                     store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
+                    store.Open((OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly));
                     CertCol = store.Certificates;
                     foreach (X509Certificate2 c in CertCol)
                     {
