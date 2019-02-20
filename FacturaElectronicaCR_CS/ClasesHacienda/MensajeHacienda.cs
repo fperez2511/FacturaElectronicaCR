@@ -204,19 +204,19 @@ public enum MensajeHaciendaTipoIdentificacionEmisor {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    CedulaFisica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    CedulaJuridica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    DIMEX,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    NITE,
 }
 
 /// <remarks/>
@@ -227,23 +227,23 @@ public enum MensajeHaciendaTipoIdentificacionReceptor {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    CedulaFisica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    CedulaJuridica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    DIMEX,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    NITE,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    Otros,
 }
 
 /// <remarks/>
@@ -254,9 +254,9 @@ public enum MensajeHaciendaMensaje {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
+    Aceptado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("3")]
-    Item3,
+    Rechazado,
 }
