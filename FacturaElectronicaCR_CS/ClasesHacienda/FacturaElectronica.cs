@@ -333,19 +333,19 @@ public enum IdentificacionTypeTipo {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    CedulaFisica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    CedulaJuridica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    DIMEX,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    NITE,
 }
 
 /// <remarks/>
@@ -1453,27 +1453,27 @@ public enum ExoneracionTypeTipoDocumento {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    ComprasAutorizadas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    VentasExentasDiplomaticos,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    OrdenCompra,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    ExencionesDireccionGeneralHacienda,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    ZonasFrancas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
@@ -1541,59 +1541,59 @@ public enum ImpuestoTypeCodigo {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    GeneralSobreVentas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    SelectivoConsumo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    UnicoCombustivos,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    EspecificoBebidasAlcoholicas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    EspecificoSobreBebidasEnvasadasSinContenidoAlcoholicoJabonesTocador,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("06")]
-    Item06,
+    ProductosTabaco,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("07")]
-    Item07,
+    Servicios,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("08")]
-    Item08,
+    GeneralVentasDiplomaticos,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("09")]
-    Item09,
+    GeneralSobreVentasComprasAutorizadas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("10")]
-    Item10,
+    GeneralSobreVentasInstitucionesPublicasOtrosOrganismos,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("11")]
-    Item11,
+    SelectivoConsumoComprasAutorizadas,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("12")]
-    Item12,
+    EspecificoCemento,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("98")]
-    Item98,
+    Otros98,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros99,
 }
 
 /// <remarks/>
@@ -1637,23 +1637,23 @@ public enum CodigoTypeTipo {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    CodigoProductoVendedor,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    CodigoProductoComprador,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    CodigoProductoIndustria,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    CodigoUsoInterno,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
@@ -1908,27 +1908,27 @@ public enum FacturaElectronicaMedioPago {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    Efectivo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    Tarjeta,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    Cheque,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    TransferenciaDepositoBancario,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    RecaudoPorTerceros,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
@@ -2117,9 +2117,10 @@ public partial class FacturaElectronicaLineaDetalle {
 [System.SerializableAttribute()]
 [System.Xml.Serialization.XmlTypeAttribute(Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica")]
 public enum UnidadMedidaType {
-    
+
     /// <remarks/>
-    Sp,
+    [System.Xml.Serialization.XmlEnumAttribute("sp")]
+    ServiciosProfesionales,
     
     /// <remarks/>
     m,
@@ -2144,47 +2145,47 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("m²")]
-    m1,
+    MetroCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("m³")]
-    m2,
+    MetroCubico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("m/s")]
-    ms,
+    MetroPorSegundo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("m/s²")]
-    ms1,
+    MetroPorSegundoCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1/m")]
-    Item1m,
+    UnoPorMetro,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("kg/m³")]
-    kgm,
+    kgPorMetroCubico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("A/m²")]
-    Am,
+    AmperePorMetroCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("A/m")]
-    Am1,
+    AmperePorMetro,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("mol/m³")]
-    molm,
+    MolPorMetroCubico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("cd/m²")]
-    cdm,
+    CandelaPorMetroCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
-    Item1,
+    UnoIndiceDeRefraccion,
     
     /// <remarks/>
     rad,
@@ -2233,7 +2234,7 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("°C")]
-    C1,
+    GradoCelcius,
     
     /// <remarks/>
     lm,
@@ -2259,23 +2260,23 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("N·m")]
-    Nm,
+    NewtonMetro,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("N/m")]
-    Nm1,
+    NewtonPorMetro,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("rad/s")]
-    rads,
+    RadianPorSegundo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("rad/s²")]
-    rads1,
+    RadianPorSegundoCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("W/m²")]
-    Wm,
+    WattPorMetroCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("J/K")]
@@ -2295,7 +2296,7 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("J/m³")]
-    Jm,
+    JPorMetroCubico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("V/m")]
@@ -2303,11 +2304,11 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("C/m³")]
-    Cm,
+    CPorMetroCubico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("C/m²")]
-    Cm1,
+    CPorMetroCuadrado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("F/m")]
@@ -2331,19 +2332,19 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("Gy/s")]
-    Gys,
+    GrayPorSegundo,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("W/sr")]
-    Wsr,
+    WattPorEstereorradian,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("W/(m²·sr)")]
-    Wmsr,
+    WattPorMetroCuadradoEstereorradian,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("kat/m³")]
-    katm,
+    KatalPorMetroCubico,
     
     /// <remarks/>
     min,
@@ -2353,17 +2354,18 @@ public enum UnidadMedidaType {
     
     /// <remarks/>
     d,
-    
+
     /// <remarks/>
-    º,
+    [System.Xml.Serialization.XmlEnumAttribute("º")]
+    Grado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("´")]
-    Item,
+    Minuto,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("´´")]
-    Item2,
+    Segundo,
     
     /// <remarks/>
     L,
@@ -3330,39 +3332,39 @@ public enum FacturaElectronicaInformacionReferenciaTipoDoc {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    FacturaElectronica,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    NotaDebito,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    NotaCredito,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    TiqueteElectronico,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    NotaDespacho,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("06")]
-    Item06,
+    Contrato,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("07")]
-    Item07,
+    Procedimiento,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("08")]
-    Item08,
+    ComprobanteEmitidoContingencia,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
@@ -3373,27 +3375,27 @@ public enum FacturaElectronicaInformacionReferenciaCodigo {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    AnulaDocumentoReferencia,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    CorrigeTextoDocumentoReferencia,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    CorrigeMonto,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    ReferenciaOtroDocumento,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    SustituyeComprobanteProvisionalPorContingencia,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
