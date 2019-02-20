@@ -41,7 +41,7 @@ using System.Xml;
 
 namespace FacturaElectronicaCR_CS
 {
-    class Comunicacion
+    public class Comunicacion
     {
         public XmlDocument xmlRespuesta { get; set; }
         public string jsonEnvio { get; set; }
@@ -50,7 +50,7 @@ namespace FacturaElectronicaCR_CS
         public string estadoFactura { get; set; }
         public string statusCode { get; set; }
 
-        public async void EnvioDatos(string TK, Recepcion objRecepcion)
+        public async void EnvioDatos(string TK, RecepcionWrapper objRecepcion)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace FacturaElectronicaCR_CS
 
                 jsonRespuesta = res.ToString();
 
-                RespuestaHacienda RH = Newtonsoft.Json.JsonConvert.DeserializeObject<RespuestaHacienda>(res);
+                RespuestaHaciendaWrapper RH = Newtonsoft.Json.JsonConvert.DeserializeObject<RespuestaHaciendaWrapper>(res);
                 
                 if ((RH.respuesta_xml != ""))
                 {
@@ -131,7 +131,7 @@ namespace FacturaElectronicaCR_CS
 
                 jsonRespuesta = res.ToString();
 
-                RespuestaHacienda RH = Newtonsoft.Json.JsonConvert.DeserializeObject<RespuestaHacienda>(res);
+                RespuestaHaciendaWrapper RH = Newtonsoft.Json.JsonConvert.DeserializeObject<RespuestaHaciendaWrapper>(res);
 
                 if ((RH.respuesta_xml != ""))
                 {

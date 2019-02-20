@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace FacturaElectronicaCR_CS
 {
-    class Funciones
+    public class Funciones
     {
         public static XmlDocument DecodeBase64ToXML(string valor)
         {

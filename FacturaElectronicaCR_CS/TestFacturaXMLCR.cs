@@ -126,11 +126,11 @@ namespace FacturaElectronicaCR_CS
 
             this.txtXMLFirmado.Text = xmlElectronica.OuterXml;
 
-            Emisor myEmisor = new Emisor();
+            EmisorWrapper myEmisor = new EmisorWrapper();
             myEmisor.numeroIdentificacion = this.txtEmisorNumero.Text;
             myEmisor.TipoIdentificacion = this.txtEmisorTipo.Text;
 
-            Receptor myReceptor = new Receptor();
+            ReceptorWrapper myReceptor = new ReceptorWrapper();
             if ((this.txtReceptorNumero.Text.Trim().Length > 0))
             {
                 myReceptor.sinReceptor = false;
@@ -142,7 +142,7 @@ namespace FacturaElectronicaCR_CS
                 myReceptor.sinReceptor = true;
             }
             
-            Recepcion myRecepcion = new Recepcion();
+            RecepcionWrapper myRecepcion = new RecepcionWrapper();
             myRecepcion.emisor = myEmisor;
             myRecepcion.receptor = myReceptor;
 
@@ -184,7 +184,7 @@ namespace FacturaElectronicaCR_CS
                                 + (nombreArchivo + "_05_RESP_SinRespuesta.txt")));
                 outputFile.Write("");
                 outputFile.Close();
-                this.txtRespuestaHacienda.Text = "Consulte en unos minutos, factura se est� procesando.";
+                this.txtRespuestaHacienda.Text = "Consulte en unos minutos, factura se está procesando.";
                 this.txtRespuestaHacienda.Text = (this.txtRespuestaHacienda.Text + ("\r\n" + ("\r\n" + "Consulte por Clave")));
                 this.txtRespuestaHacienda.Text = (this.txtRespuestaHacienda.Text + ("\r\n" + ("\r\n" + enviaFactura.mensajeRespuesta)));
             }

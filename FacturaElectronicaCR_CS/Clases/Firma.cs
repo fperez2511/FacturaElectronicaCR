@@ -44,7 +44,7 @@ using FirmaXadesNet.Signature.Parameters;
 
 namespace FacturaElectronicaCR_CS
 {
-    class Firma
+    public class Firma
     {
 
         public void FirmaXML_Xades(string pathXML, string thumbprintCertificado)
@@ -64,6 +64,7 @@ namespace FacturaElectronicaCR_CS
                 //La propiedad PolicyHash es la misma para todos, es un cálculo en base al archivo pdf indicado en PolicyIdentifier
                 parametros.SignaturePolicyInfo.PolicyHash = "Ohixl6upD6av8N7pEvDABhEL6hM=";
                 parametros.SignaturePackaging = SignaturePackaging.ENVELOPED;
+                // the "new" stuff
                 parametros.DataFormat = new DataFormat();
                 parametros.Signer = new FirmaXadesNet.Crypto.Signer(cert);
 
@@ -89,7 +90,7 @@ namespace FacturaElectronicaCR_CS
         public X509Certificate2 GetCertificateByThumbprint(string thumbprintCertificado)
         {
             X509Certificate2 cert = null;
-            X509Store store = new X509Store("My", StoreLocation.CurrentUser);
+            X509Store store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
             try
             {
                 store.Open((OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly));
@@ -105,7 +106,7 @@ namespace FacturaElectronicaCR_CS
 
                 if ((cert == null))
                 {
-                    store = new X509Store("My", StoreLocation.LocalMachine);
+                    store = new X509Store(StoreName.My, StoreLocation.LocalMachine);
                     CertCol = store.Certificates;
                     foreach (X509Certificate2 c in CertCol)
                     {

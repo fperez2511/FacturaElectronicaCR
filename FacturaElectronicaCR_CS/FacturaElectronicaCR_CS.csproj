@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AFA0696F-555B-4459-BEC8-E98F2CAD9076}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>FacturaElectronicaCR_CS</RootNamespace>
     <AssemblyName>FacturaElectronicaCR_CS</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>..\COMPONENTES\Librerias\BouncyCastle.Crypto.dll</HintPath>
@@ -41,8 +44,8 @@
     <Reference Include="Microsoft.Xades">
       <HintPath>..\COMPONENTES\Librerias\Microsoft.Xades.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,6 +70,12 @@
     <Compile Include="ClasesDatos\Emisor.cs" />
     <Compile Include="ClasesDatos\FacturaElectronicaCR.cs" />
     <Compile Include="ClasesDatos\Receptor.cs" />
+    <Compile Include="ClasesHacienda\FacturaElectronica.cs" />
+    <Compile Include="ClasesHacienda\MensajeHacienda.cs" />
+    <Compile Include="ClasesHacienda\MensajeReceptor.cs" />
+    <Compile Include="ClasesHacienda\NotaCreditoElectronica.cs" />
+    <Compile Include="ClasesHacienda\NotaDebitoElectronica.cs" />
+    <Compile Include="ClasesHacienda\TiqueteElectronico.cs" />
     <Compile Include="Clases\ClasesJson.cs" />
     <Compile Include="Clases\Comunicacion.cs" />
     <Compile Include="Clases\Firma.cs" />
@@ -88,9 +97,11 @@
     </Compile>
     <EmbeddedResource Include="Certificado.resx">
       <DependentUpon>Certificado.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CreaClave_NumeroConsecutivo.resx">
       <DependentUpon>CreaClave_NumeroConsecutivo.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +114,7 @@
     </Compile>
     <EmbeddedResource Include="TestFacturaXMLCR.resx">
       <DependentUpon>TestFacturaXMLCR.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

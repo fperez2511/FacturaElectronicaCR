@@ -7,7 +7,7 @@ using System.Net.Http;
 
 namespace FacturaElectronicaCR_CS
 {
-    class TokenHacienda
+    public class TokenHacienda
     {
 
         public string accessToken { get; set; }
@@ -33,7 +33,7 @@ namespace FacturaElectronicaCR_CS
 
                 HttpResponseMessage response = http.PostAsync(IDP_URI, content).Result;
                 string res = await response.Content.ReadAsStringAsync();
-                Token tk = Newtonsoft.Json.JsonConvert.DeserializeObject<Token>(res);
+                TokenWrapper tk = Newtonsoft.Json.JsonConvert.DeserializeObject<TokenWrapper>(res);
                 if ((response.StatusCode != System.Net.HttpStatusCode.OK))
                 {
                     throw new Exception(("Error: " + response.GetHashCode()));

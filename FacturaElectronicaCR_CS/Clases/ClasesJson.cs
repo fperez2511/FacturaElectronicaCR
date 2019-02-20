@@ -7,11 +7,11 @@ using Newtonsoft.Json;
 
 namespace FacturaElectronicaCR_CS
 {
-    class ClasesJson
+    public class ClasesJson
     {
     }
 
-    class RespuestaHacienda
+    public class RespuestaHaciendaWrapper
     {
         [JsonProperty("clave")]
         public string clave { get; set; }
@@ -26,7 +26,7 @@ namespace FacturaElectronicaCR_CS
         public string respuesta_xml { get; set; }
     }
 
-    class Token
+    public class TokenWrapper
     {
         [JsonProperty("access_token")]
         public string access_token { get; set; }
@@ -35,7 +35,7 @@ namespace FacturaElectronicaCR_CS
         public string refresh_token { get; set; }
     }
 
-    class Recepcion
+    public class RecepcionWrapper
     {
         [JsonProperty("clave")]
         public string clave { get; set; }
@@ -44,16 +44,16 @@ namespace FacturaElectronicaCR_CS
         public string fecha { get; set; }
 
         [JsonProperty("emisor")]
-        public Emisor emisor { get; set; }
+        public EmisorWrapper emisor { get; set; }
 
         [JsonProperty("receptor")]
-        public Receptor receptor { get; set; }
+        public ReceptorWrapper receptor { get; set; }
 
         [JsonProperty("comprobanteXml")]
         public string comprobanteXml { get; set; }
     }
 
-    class Emisor
+    public class EmisorWrapper
     {
         [JsonProperty("TipoIdentificacion")]
         public string TipoIdentificacion { get; set; }
@@ -62,7 +62,7 @@ namespace FacturaElectronicaCR_CS
         public string numeroIdentificacion { get; set; }
     }
 
-    class Receptor {
+    public class ReceptorWrapper {
         [JsonProperty("TipoIdentificacion")]
         public string TipoIdentificacion { get; set; }
 
