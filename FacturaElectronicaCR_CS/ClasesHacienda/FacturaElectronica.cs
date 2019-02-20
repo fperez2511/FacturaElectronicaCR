@@ -1924,7 +1924,7 @@ public enum FacturaElectronicaMedioPago {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    RecaudoPorTerceros,
+    RecaudadoPorTerceros,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
