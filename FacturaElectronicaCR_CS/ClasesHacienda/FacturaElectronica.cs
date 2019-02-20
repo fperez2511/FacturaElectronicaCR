@@ -1873,31 +1873,31 @@ public enum FacturaElectronicaCondicionVenta {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
-    Item01,
+    Contado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
-    Item02,
+    Credito,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
-    Item03,
+    Consignacion,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
-    Item04,
+    Apartado,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
-    Item05,
+    ArrendamientoOpcionCompra,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("06")]
-    Item06,
+    ArrendamientoFuncionFinanciera,
     
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("99")]
-    Item99,
+    Otros,
 }
 
 /// <remarks/>
