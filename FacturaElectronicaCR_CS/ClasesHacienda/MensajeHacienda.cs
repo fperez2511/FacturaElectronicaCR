@@ -20,177 +20,220 @@ using System.Xml.Serialization;
 [System.SerializableAttribute()]
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
-[System.Xml.Serialization.XmlRootAttribute(Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda", IsNullable=false)]
-public partial class MensajeHacienda {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
+[System.Xml.Serialization.XmlRootAttribute(Namespace = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda", IsNullable = false)]
+public partial class MensajeHacienda
+{
+
     private string claveField;
-    
+
     private string nombreEmisorField;
-    
+
     private MensajeHaciendaTipoIdentificacionEmisor tipoIdentificacionEmisorField;
-    
+
     private string numeroCedulaEmisorField;
-    
+
     private string nombreReceptorField;
-    
+
     private MensajeHaciendaTipoIdentificacionReceptor tipoIdentificacionReceptorField;
-    
+
     private bool tipoIdentificacionReceptorFieldSpecified;
-    
+
     private string numeroCedulaReceptorField;
-    
+
     private MensajeHaciendaMensaje mensajeField;
-    
+
     private string detalleMensajeField;
-    
+
     private decimal montoTotalImpuestoField;
-    
+
     private bool montoTotalImpuestoFieldSpecified;
-    
+
     private decimal totalFacturaField;
-    
+
     private SignatureType signatureField;
-    
+
     /// <remarks/>
-    public string Clave {
-        get {
+    public string Clave
+    {
+        get
+        {
             return this.claveField;
         }
-        set {
+        set
+        {
             this.claveField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string NombreEmisor {
-        get {
+    public string NombreEmisor
+    {
+        get
+        {
             return this.nombreEmisorField;
         }
-        set {
+        set
+        {
             this.nombreEmisorField = value;
         }
     }
-    
+
     /// <remarks/>
-    public MensajeHaciendaTipoIdentificacionEmisor TipoIdentificacionEmisor {
-        get {
+    public MensajeHaciendaTipoIdentificacionEmisor TipoIdentificacionEmisor
+    {
+        get
+        {
             return this.tipoIdentificacionEmisorField;
         }
-        set {
+        set
+        {
             this.tipoIdentificacionEmisorField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string NumeroCedulaEmisor {
-        get {
+    public string NumeroCedulaEmisor
+    {
+        get
+        {
             return this.numeroCedulaEmisorField;
         }
-        set {
+        set
+        {
             this.numeroCedulaEmisorField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string NombreReceptor {
-        get {
+    public string NombreReceptor
+    {
+        get
+        {
             return this.nombreReceptorField;
         }
-        set {
+        set
+        {
             this.nombreReceptorField = value;
         }
     }
-    
+
     /// <remarks/>
-    public MensajeHaciendaTipoIdentificacionReceptor TipoIdentificacionReceptor {
-        get {
+    public MensajeHaciendaTipoIdentificacionReceptor TipoIdentificacionReceptor
+    {
+        get
+        {
             return this.tipoIdentificacionReceptorField;
         }
-        set {
+        set
+        {
             this.tipoIdentificacionReceptorField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool TipoIdentificacionReceptorSpecified {
-        get {
+    public bool TipoIdentificacionReceptorSpecified
+    {
+        get
+        {
             return this.tipoIdentificacionReceptorFieldSpecified;
         }
-        set {
+        set
+        {
             this.tipoIdentificacionReceptorFieldSpecified = value;
         }
     }
-    
+
     /// <remarks/>
-    public string NumeroCedulaReceptor {
-        get {
+    public string NumeroCedulaReceptor
+    {
+        get
+        {
             return this.numeroCedulaReceptorField;
         }
-        set {
+        set
+        {
             this.numeroCedulaReceptorField = value;
         }
     }
-    
+
     /// <remarks/>
-    public MensajeHaciendaMensaje Mensaje {
-        get {
+    public MensajeHaciendaMensaje Mensaje
+    {
+        get
+        {
             return this.mensajeField;
         }
-        set {
+        set
+        {
             this.mensajeField = value;
         }
     }
-    
+
     /// <remarks/>
-    public string DetalleMensaje {
-        get {
+    public string DetalleMensaje
+    {
+        get
+        {
             return this.detalleMensajeField;
         }
-        set {
+        set
+        {
             this.detalleMensajeField = value;
         }
     }
-    
+
     /// <remarks/>
-    public decimal MontoTotalImpuesto {
-        get {
+    public decimal MontoTotalImpuesto
+    {
+        get
+        {
             return this.montoTotalImpuestoField;
         }
-        set {
+        set
+        {
             this.montoTotalImpuestoField = value;
         }
     }
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlIgnoreAttribute()]
-    public bool MontoTotalImpuestoSpecified {
-        get {
+    public bool MontoTotalImpuestoSpecified
+    {
+        get
+        {
             return this.montoTotalImpuestoFieldSpecified;
         }
-        set {
+        set
+        {
             this.montoTotalImpuestoFieldSpecified = value;
         }
     }
-    
+
     /// <remarks/>
-    public decimal TotalFactura {
-        get {
+    public decimal TotalFactura
+    {
+        get
+        {
             return this.totalFacturaField;
         }
-        set {
+        set
+        {
             this.totalFacturaField = value;
         }
     }
-    
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.w3.org/2000/09/xmldsig#")]
-    public SignatureType Signature {
-        get {
+    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.w3.org/2000/09/xmldsig#")]
+    public SignatureType Signature
+    {
+        get
+        {
             return this.signatureField;
         }
-        set {
+        set
+        {
             this.signatureField = value;
         }
     }
@@ -199,21 +242,22 @@ public partial class MensajeHacienda {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
-public enum MensajeHaciendaTipoIdentificacionEmisor {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
+public enum MensajeHaciendaTipoIdentificacionEmisor
+{
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
     CedulaFisica,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
     CedulaJuridica,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
     DIMEX,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
     NITE,
@@ -222,25 +266,26 @@ public enum MensajeHaciendaTipoIdentificacionEmisor {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
-public enum MensajeHaciendaTipoIdentificacionReceptor {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
+public enum MensajeHaciendaTipoIdentificacionReceptor
+{
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("01")]
     CedulaFisica,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("02")]
     CedulaJuridica,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("03")]
     DIMEX,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("04")]
     NITE,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("05")]
     Otros,
@@ -249,13 +294,14 @@ public enum MensajeHaciendaTipoIdentificacionReceptor {
 /// <remarks/>
 [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
 [System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
-public enum MensajeHaciendaMensaje {
-    
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeHacienda")]
+public enum MensajeHaciendaMensaje
+{
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("1")]
     Aceptado,
-    
+
     /// <remarks/>
     [System.Xml.Serialization.XmlEnumAttribute("3")]
     Rechazado,

@@ -76,6 +76,7 @@
     <Compile Include="ClasesHacienda\NotaCreditoElectronica.cs" />
     <Compile Include="ClasesHacienda\NotaDebitoElectronica.cs" />
     <Compile Include="ClasesHacienda\TiqueteElectronico.cs" />
+    <Compile Include="ClasesHacienda\XmldsigHacienda.cs" />
     <Compile Include="Clases\ClasesJson.cs" />
     <Compile Include="Clases\Comunicacion.cs" />
     <Compile Include="Clases\Firma.cs" />
